@@ -1,0 +1,22 @@
+# DISABLE DIRECTORY INDEXES
+Options -Indexes
+RewriteEngine On
+
+# Rewrite the URL for /ver1/properties
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ver1/users$ api.php?view=users [QSA,NC,L]
+RewriteRule ^ver1/properties$ api.php?view=properties [QSA,NC,L]
+RewriteRule ^ver1/properties/recent$ api.php?view=recent [QSA,NC,L]
+RewriteRule ^ver1/properties/recommended$ api.php?view=recommended [QSA,NC,L]
+RewriteRule ^ver1/properties/([^/]+)$ api.php?view=property_id&id=$1 [QSA,NC,L]
+
+RewriteRule ^ver1/properties/title/(.*)$ api.php?view=property_title&title=$1 [QSA,NC,L]
+RewriteRule ^ver1/properties/bedrooms/(.*)$ api.php?view=property_by_bedrooms&bedrooms=$1 [QSA,NC,L]
+RewriteRule ^ver1/properties/garages/(.*)$ api.php?view=property_by_garages&garages=$1 [QSA,NC,L]
+RewriteRule ^ver1/properties/location/(.*)$ api.php?view=property_by_location&location=$1 [QSA,NC,L]
+RewriteRule ^ver1/properties/locationname/(.*)$ api.php?view=property_by_location_name&location=$1 [QSA,NC,L]
+RewriteRule ^ver1/properties/prices/([^/]+)/([^/]+)$ api.php?view=property_price&minprice=$1&maxprice=$2 [L]
+
+RewriteRule ^ver1/login/$ api.php?view=login [QSA,NC,L]
+RewriteRule ^ver1/register/$ api.php?view=register [QSA,NC,L]

@@ -29,7 +29,6 @@ composer.lock
 /database/
 /modules/
 /plugins/
-/properties-api/
 /public/
 /resources/
 /routes/
