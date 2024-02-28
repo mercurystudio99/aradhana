@@ -21,6 +21,5 @@ yarn-error.log
 /storage/installed
 composer.lock
 
-/database/
 /plugins/
 /public/
