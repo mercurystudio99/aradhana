@@ -27,7 +27,6 @@ composer.lock
 /config/
 /custom/
 /database/
-/modules/
 /plugins/
 /public/
 /resources/
