@@ -1,0 +1,39 @@
+.sidebar-menu .main-menu li a{
+    color:#10174B !important;
+    font-weight: 700;
+  }
+  .sidebar-menu .main-menu ul{
+    background-color: #fff;
+  }
+  .sidebar-menu .main-menu>li:hover>a{
+    background: linear-gradient(#08f 0,#4698fe) !important;
+    color:white !important;
+  }
+  .sidebar-menu .main-menu>li.has-children.active_child ul li:hover{
+    background: linear-gradient(90deg,#08f 0,#4698fe);
+  }
+  .sidebar-menu .main-menu>li.has-children.active_child ul a{
+    padding: 10px 35px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+  }
+  
+  .sidebar-menu .main-menu>li.has-children.active_child ul li:hover{
+    background: linear-gradient(90deg,#08f 0,#4698fe);
+  }
+  .sidebar-menu .main-menu>li.active:hover>a, .sidebar-menu .main-menu>li.active>a:hover{
+    color:#fff !important;
+  }
+  .sidebar-menu .main-menu>li.has-children.active_child ul a:hover{
+    color:#fff !important;
+  }
+  .main-header .header-logo{
+    width:300px;
+    background:transparent !important;
+    border-bottom:0px solid #1e2f44
+  }
+  .sidebar-menu .main-menu>li.active:hover>a, .sidebar-menu .main-menu>li.active>a{
+    background: linear-gradient(90deg,#08f 0,#4698fe);
+  }

@@ -1,0 +1,128 @@
+
+
+
+
+compare-aside, main {
+
+  min-height: 580px; }
+
+compare-aside {
+  width: 380px;
+  right: 0;
+  z-index: 1001;
+  position: fixed;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  background-color: #fff;
+  border-left:4px solid #007bff;
+  -webkit-transition: 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: 1s transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 1s transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 1s transform cubic-bezier(0.23, 1, 0.32, 1), 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1); }
+  .show-sidebar compare-aside {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); }
+  compare-aside .toggle {
+    position: absolute;
+    top: 55%;
+    right: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 7px 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    cursor: pointer;
+    border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -ms-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    opacity: 0.7;
+  }
+  compare-aside .toggle a{
+    text-decoration: none;
+  }
+    .show-sidebar compare-aside .toggle .burger:before, .show-sidebar compare-aside .toggle .burger span, .show-sidebar compare-aside .toggle .burger:after {
+      background: #fff; }
+  .show-sidebar compare-aside {
+    -webkit-box-shadow: -10px 0 30px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: -10px 0 30px 0 rgba(0, 0, 0, 0.5); }
+  compare-aside .side-inner {
+    padding: 20px 0;
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; 
+    position:relative;
+  }
+    compare-aside .side-inner .share {
+      padding: 50px; }
+      compare-aside .side-inner .share h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 30px; }
+      compare-aside .side-inner .share p {
+        color: #fff;
+        line-height: 1.8;
+        margin-bottom: 30px; }
+      compare-aside .side-inner .share form .form-control {
+        background: none;
+        border-radius: 0;
+        height: 56px;
+        margin-bottom: 20px;
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.2); }
+        compare-aside .side-inner .share form .form-control:active, compare-aside .side-inner .share form .form-control:focus {
+          outline: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border-color: #fff; }
+        compare-aside .side-inner .share form .form-control::-webkit-input-placeholder {
+          /* Edge */
+          color: #fff; }
+        compare-aside .side-inner .share form .form-control:-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #fff; }
+        compare-aside .side-inner .share form .form-control::-ms-input-placeholder {
+          color: #fff; }
+        compare-aside .side-inner .share form .form-control::placeholder {
+          color: #fff; }
+      compare-aside .side-inner .share form textarea {
+        height: auto !important; }
+      compare-aside .side-inner .share form .btn {
+        border-color: transparent;
+        height: 56px;
+        border-radius: 0;
+        display: block;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: .2rem; }
+
+
+
+
+
+.menu-toggle:hover span, .menu-toggle:focus span {
+  color: #000; }
+.toggle:hover{
+  opacity:1;
+}
+.menu-toggle.active span {
+  color: #fff; }
